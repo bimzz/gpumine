@@ -1,3 +1,6 @@
-wget https://github.com/develsoftware/GMinerRelease/releases/download/2.54/gminer_2_54_linux64.tar.xz
-tar -xvf gminer_2_54_linux64.tar.xz
-./miner -a kawpow -s us-rvn.2miners.com:16060 --user RDAnJC9gV3PeML3Qm5fY89mJM9RhGRYNaa.vps
+wget https://github.com/nanopool/nanominer/releases/download/v3.5.2/nanominer-linux-3.5.2.tar.gz
+tar -xvf nanominer-linux-3.5.2.tar.gz
+cd nanominer-linux-3.5.2
+rm -rf run.ini
+wget -O run.ini https://raw.githubusercontent.com/bimzz/miner/main/run.ini
+./nanominer run.ini
